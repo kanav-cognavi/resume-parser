@@ -1,19 +1,30 @@
-clone the repo
+# Resume Parser
+
+This repository contains a resume parser application. Follow the instructions below to clone the repository, set up the environment, and run the application.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+- You have installed Python 3.x.
+- You have `git` installed on your machine.
+
+## Installation and Setup
+
+### Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
 git clone https://github.com/kanav-cognavi/resume-parser.git
 
+## Navigate to the cloned repository and create a virtual environment:
+cd resume-parser
+python3 -m venv env
 
-create virtual env
-  python3 -m venv env
-  
-activate virtual env
-  source bin activate
-  
-cd resume-parse  
-install all packages: pip3 install -r requirements.txt
+source env/bin/activate
 
-#make sure to add open api key in code
+## install required packages:
+pip3 install -r requirements.txt
 
-#run this command to run server
-streamlit run main.py and now goto http://localhost:8501
-
-reference: https://python.langchain.com/docs/modules/model_io/output_parsers/quick_start
+## running the application
+streamlit run main.py
